@@ -48,7 +48,7 @@ const SidebarItem: React.FC<SidebarItemProps> = ({
             >
                 <Icon size={24} color="white"/>
                 <p className="hidden lg:block text-white text-xl">
-
+                    {label}
                 </p>
             </div>
 
