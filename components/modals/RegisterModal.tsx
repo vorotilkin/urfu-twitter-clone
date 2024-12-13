@@ -44,6 +44,7 @@ const RegisterModal = () => {
             })
 
             registerModal.onClose()
+            window.location.reload();
         } catch (error) {
             console.log(error)
             toast.error("Something went wrong");

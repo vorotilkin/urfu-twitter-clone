@@ -25,8 +25,6 @@ const LoginModal = () => {
     const onSubmit = useCallback(async () => {
         try {
             setIsLoading(true)
-            console.log(email)
-            console.log(password)
 
             await axios.post("/api/login", {
                 email,
@@ -34,6 +32,7 @@ const LoginModal = () => {
             })
 
             loginModal.onClose()
+            window.location.reload();
         } catch (error) {
             console.log(error)
         } finally {
